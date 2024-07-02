@@ -27,6 +27,14 @@
                 Console.WriteLine();
             }
 
+            // Check the method decrementElements
+            int[] arr3 = { 1, 2, 3, 4, 5 };
+            decrementElements(arr3);
+            for (int i = 0; i < arr3.Length; i++)
+            {
+                Console.Write(arr3[i] + " ");
+            }
+
         }
 
         /// <summary>
@@ -61,6 +69,18 @@
                         a[i][j + 1] *= 2;
                     }
                 }
+            }
+        }
+
+        /// <summary>
+        /// This method to decrement all elements in the array by 1
+        /// </summary>
+        /// <param name="a"></param>
+        public static void decrementElements(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] -= 1;
             }
         }
     }
